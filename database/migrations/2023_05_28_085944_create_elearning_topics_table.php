@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('elearning_topics', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->text('description')->nullable();
+            $table->integer('elearning_ID')->nullable();
+            $table->integer('learning_object_ID')->nullable();
             $table->timestamps();
         });
     }

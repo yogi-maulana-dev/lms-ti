@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('elearning_topic_lists', function (Blueprint $table) {
             $table->id();
+            $table->integer('topic_id')->nullable();
+            $table->integer('learning_object_ID')->nullable();
             $table->timestamps();
         });
     }
