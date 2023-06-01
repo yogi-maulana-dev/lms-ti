@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('assigments', function (Blueprint $table) {
             $table->id();
+            $table->integer('elearning_ID')->nullable();
+            $table->string('name')->nullable();
+            $table->text('description')->nullable();
+            $table->text('file')->nullable();
+            $table->enum('status', ['aktif', 'tidak aktif']);
+            $table->enum('working_status', ['0', '1']);
             $table->timestamps();
         });
     }

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\quiz;
-use App\Http\Requests\StorequizRequest;
-use App\Http\Requests\UpdatequizRequest;
+use App\Models\quis;
+use App\Http\Requests\StorequisRequest;
+use App\Http\Requests\UpdatequisRequest;
 
-class QuizController extends Controller
+class QuisController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class QuizController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorequizRequest $request)
+    public function store(StorequisRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class QuizController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(quiz $quiz)
+    public function show(quis $quis)
     {
         //
     }
@@ -43,7 +43,7 @@ class QuizController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(quiz $quiz)
+    public function edit(quis $quis)
     {
         //
     }
@@ -51,7 +51,7 @@ class QuizController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatequizRequest $request, quiz $quiz)
+    public function update(UpdatequisRequest $request, quis $quis)
     {
         //
     }
@@ -59,7 +59,7 @@ class QuizController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(quiz $quiz)
+    public function destroy(quis $quis)
     {
         //
     }

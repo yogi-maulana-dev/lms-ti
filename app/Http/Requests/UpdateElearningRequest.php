@@ -22,7 +22,11 @@ class UpdateElearningRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => 'required',
+            'code' => 'required',
+            'description' => 'required',
+            'teacher_ID' => 'required',
+            'student_group' => 'required',
         ];
     }
 }
