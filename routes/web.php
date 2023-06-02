@@ -14,10 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('tailwind-test');
-});
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
+    return view('welcome');
 });
 
 Route::get('logout', function () {
