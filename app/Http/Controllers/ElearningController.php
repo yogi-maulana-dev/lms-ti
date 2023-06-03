@@ -13,7 +13,11 @@ class ElearningController extends Controller
      */
     public function index()
     {
-        //
+        $data =[
+            'title' => 'Manajemen Banner',
+            'elearning' => Elearning::get(),
+            'content' => 'operator/banner/index'
+        ];    
     }
 
     /**
@@ -29,7 +33,7 @@ class ElearningController extends Controller
      */
     public function store(StoreElearningRequest $request)
     {
-        //
+        $data = $request -> validated ();
     }
 
     /**
@@ -53,7 +57,7 @@ class ElearningController extends Controller
      */
     public function update(UpdateElearningRequest $request, Elearning $elearning)
     {
-        //
+        $data = $request -> validated ();
     }
 
     /**
